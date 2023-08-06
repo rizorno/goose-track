@@ -1,0 +1,29 @@
+.wrapper {
+   min-width: 100%;
+   height: fit-content;
+   max-height: 100%;
+
+   background-color: var(--ld-ffffff-21222c);
+   color: var(--ld-111111-ffffff);
+
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+
+   padding: 25px 18px 20px;
+
+   border: 1px solid var(--ld-rgba22022722905-rgba255255255015);
+   border-radius: 8px;
+
+   @media screen and (min-width: 768px) {
+      min-width: calc((100% - 16px) / 2);
+
+      gap: 40px;
+
+      padding: 25px 20px 20px;
+   }
+
+   @media screen and (min-width: 1440px) {
+      min-width: calc((100% - 27px * 2) / 3);
+   }
+}

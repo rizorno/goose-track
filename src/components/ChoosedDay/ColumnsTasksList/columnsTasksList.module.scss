@@ -1,0 +1,33 @@
+.wrapper {
+   list-style: none;
+
+   display: flex;
+   flex-direction: column;
+   gap: 14px;
+
+   padding-right: 3px;
+
+   overflow-y: auto;
+   overflow-x: hidden;
+
+   @media screen and (min-width: 768px) {
+      gap: 18px;
+   }
+
+   &::-webkit-scrollbar {
+      width: 8px;
+      height: 376px;
+
+      background-color: var(--ld-rgba000020-rgba000025);
+
+      margin-left: 17px;
+
+      border-radius: 12px;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: var(--ld-e7e5e5-2d3037);
+
+      border-radius: 12px;
+   }
+}

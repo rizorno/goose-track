@@ -1,0 +1,122 @@
+.filterBox {
+   max-width: 335px;
+
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+
+   @media (min-width: 768px) {
+      max-width: 100%;
+
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 20px;
+   }
+}
+
+.filterWrapper {
+   @media (min-width: 768px) {
+      width: 320px;
+   }
+}
+
+.filterWrapper > div > div > fieldset {
+   border-color: var(--ld-rgba000023-rgba255255255015);
+}
+
+.filterWrapper input[id="checkboxes-tags-demo"]::placeholder {
+   color: var(--ld-rgba000054-ffffff);
+   opacity: 1;
+
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.filterWrapper span {
+   color: var(--ld-111111-ffffff);
+
+   font-weight: 500;
+   font-size: 14px;
+   letter-spacing: 0.15008px;
+}
+
+.filterWrapper div[data-tag-index] {
+   background-color: var(--ld-rgba000008-c1b3b3e9);
+
+   & > span {
+      color: var(--black);
+
+      font-weight: 400;
+      font-size: 13px;
+   }
+}
+
+button[aria-label="Clear"] > svg {
+   fill: var(--ld-rgba000054-ffffff);
+}
+
+button[aria-label="Open"] > svg {
+   fill: var(--ld-rgba000054-ffffff);
+}
+
+ul[id="checkboxes-tags-demo-listbox"] > li > div {
+   height: 40px;
+
+   background-color: var(--ld-rgb230225225-rgb203199199);
+
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.286;
+
+   display: flex;
+   align-items: center;
+}
+
+ul:has(.itemSelect) {
+   background-color: var(--ld-ffffff-efe8e8);
+
+   font-weight: 500;
+
+   &:hover,
+   &:focus {
+      cursor: pointer;
+   }
+}
+
+.searchWrapper {
+   @media (min-width: 768px) {
+      width: 300px;
+   }
+
+   @media (min-width: 1440px) {
+      width: 250px;
+   }
+}
+
+.searchWrapper > div::before,
+.searchWrapper > div:hover {
+   border-bottom-color: var(--ld-rgba000023-rgba255255255015);
+}
+
+label[id="standard-search-label"] {
+   color: var(--ld-rgba000054-ffffff);
+   opacity: 1;
+
+   font-weight: 400;
+   font-size: 14px;
+
+   padding-left: 5px;
+
+   transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+input[id="standard-search"] {
+   color: var(--ld-111111-ffffff);
+
+   padding-left: 5px;
+   padding-right: 5px;
+
+   &::after {
+      border-bottom: 1px solid var(--accent);
+   }
+}

@@ -1,0 +1,38 @@
+.btnWrapper {
+   position: relative;
+
+   display: flex;
+   gap: 10px;
+}
+
+.btn {
+   background-color: transparent;
+
+   border: none;
+
+   cursor: pointer;
+}
+
+.btnIconDate,
+.btnIcon,
+.btnIconAlarm {
+   width: 16px;
+   height: 16px;
+}
+
+.btnIcon {
+   stroke: var(--ld-111111-ffffff);
+
+   &:hover {
+      stroke: var(--accent);
+   }
+}
+
+.btnIconDate,
+.btnIconAlarm {
+   fill: var(--ld-111111-ffffff);
+
+   &:hover {
+      fill: var(--accent);
+   }
+}

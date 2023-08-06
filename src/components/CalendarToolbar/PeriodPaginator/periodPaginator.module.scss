@@ -1,0 +1,78 @@
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.name {
+   background-color: var(--accent);
+   color: var(--ld-616161-ffffff);
+
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.286;
+   text-align: center;
+   text-transform: uppercase;
+
+   padding: 6px 12px;
+
+   border-radius: 8px;
+
+   @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.125;
+
+      padding: 6px 12px;
+      margin-right: 8px;
+   }
+}
+
+.btnContainer {
+   display: flex;
+
+   border-radius: 8px;
+
+   box-shadow: 0 3px 3px 0 rgb(0 0 0 / 14%), 0 1px 7px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%);
+}
+
+.btn {
+   background-color: var(--ld-ffffff-21222c);
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   padding: 7px 10px;
+
+   border: 1px solid var(--ld-rgba22022722905-rgba255255255015);
+
+   cursor: pointer;
+
+   & > svg {
+      width: 18px;
+      height: 18px;
+   }
+}
+
+.btnRight,
+.btnLeft {
+   width: 36px;
+   height: 30px;
+
+   fill: transparent;
+   stroke: var(--ld-616161-ffffff);
+
+   &:active {
+      transform: translateY(1px);
+   }
+}
+
+.btnRight,
+.btnRight:active {
+   border-radius: 0 8px 8px 0;
+}
+
+.btnLeft,
+.btnLeft:active {
+   border-radius: 8px 0 0 8px;
+}

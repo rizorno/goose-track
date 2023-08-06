@@ -1,0 +1,26 @@
+.btnLight,
+.btnDark {
+   background: transparent;
+
+   display: block;
+
+   border: none;
+
+   &:hover {
+      scale: 1.1;
+   }
+}
+
+.changeTheme {
+   width: 24px;
+   height: 24px;
+
+   box-sizing: border-box;
+
+   cursor: pointer;
+
+   @media screen and (min-width: 768px) {
+      width: 32px;
+      height: 32px;
+   }
+}

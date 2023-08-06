@@ -1,0 +1,52 @@
+.cardItem {
+   position: relative;
+
+   width: 100%;
+   height: 100%;
+
+   background-color: var(--ld-f7f6f9-171820);
+
+   padding: 15px 18px;
+
+   border: 1px solid var(--ld-rgba22022722905-rgba255255255015);
+   border-radius: 8px;
+}
+
+.cardTitle {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.286;
+
+   margin-bottom: 20px;
+}
+
+.btnWrapper {
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+}
+
+.cardPriority {
+   color: var(--c-f7f6f9);
+
+   font-weight: 600;
+   font-size: 10px;
+   line-height: 1.2;
+   text-align: center;
+
+   padding: 4px 12px;
+
+   border-radius: 4px;
+}
+
+.colorBlue {
+   background-color: var(--c-72c2f8);
+}
+
+.colorYellow {
+   background-color: var(--c-f3b249);
+}
+
+.colorRed {
+   background-color: var(--c-ea3d65);
+}

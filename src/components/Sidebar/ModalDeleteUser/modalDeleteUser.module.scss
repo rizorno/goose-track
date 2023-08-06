@@ -1,0 +1,132 @@
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1;
+
+   width: 100vw;
+   height: 100vh;
+
+   backdrop-filter: blur(1px);
+
+   animation: show 1s forwards;
+}
+
+@keyframes show {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+.modalWrapper {
+   position: absolute;
+   top: 50vh;
+   left: 50vw;
+   transform: translate(-50%, -50%);
+   z-index: 2;
+
+   max-width: 450px;
+
+   background-color: #bdb8b8;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+
+   padding: 14px;
+
+   border: 1px solid var(--c-rgba255255255015);
+   border-radius: 8px;
+
+   box-shadow: 0px 4px 16px var(--c-rgba17171701);
+
+   @media screen and (min-width: 768px) {
+      transform: translate(-50%, -100%);
+
+      padding: 20px 24px;
+   }
+}
+
+.modalTitle {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1.286;
+   text-align: center;
+
+   margin-bottom: 8px;
+
+   @media (min-width: 768px) {
+      font-size: 16px;
+   }
+}
+
+.btnWrapper {
+   display: flex;
+   justify-content: center;
+   gap: 7px;
+
+   @media (min-width: 768px) {
+      gap: 10px;
+   }
+
+   @media (min-width: 1440px) {
+      gap: 20px;
+   }
+}
+
+.modalBtn {
+   width: 50%;
+
+   background-color: var(--ld-f7f6f9-919191);
+   color: var(--ld-111111-ffffff);
+
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 1.286;
+   letter-spacing: -0.02em;
+
+   padding: 10px;
+   margin: 0 auto;
+
+   border: none;
+   border-radius: 16px;
+
+   box-shadow: 4px 2px 16px 0px var(--c-rgba136165191048);
+
+   cursor: pointer;
+
+   @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.333;
+      letter-spacing: -0.36px;
+   }
+
+   &:hover,
+   &:focus {
+      color: var(--white);
+
+      transform: scale(1.02);
+   }
+
+   &:active {
+      transform: translateY(1px);
+   }
+}
+
+.modalBtn[name="yes"] {
+   &:hover,
+   &:focus {
+      background-color: #ec7591;
+   }
+}
+
+.modalBtn[name="no"] {
+   &:hover,
+   &:focus {
+      background-color: var(--accent);
+   }
+}

@@ -1,0 +1,203 @@
+@import-normalize;
+/* bring in normalize.css styles */
+
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* auth section */
+  --accent: #3e85f3;
+  --white: #ffffff;
+  --black: #111111;
+  --shadow-1: rgba(0, 0, 0, 0.04);
+  --shadow-2: rgba(0, 0, 0, 0.07);
+
+  /* description */
+  --c-dcebf7: #dcebf7;
+  --c-171820: #171820;
+  --c-rgba17171707: rgba(17, 17, 17, 0.7);
+
+  /* reviews */
+  --c-ebe8e4: #ebe8e4;
+  --c-343434: #343434;
+  --c-ffac33: #ffac33;
+  --c-cec9c1: #cec9c1;
+
+  /* register / login */
+  --c-e74a3b: #e74a3b;
+  --c-3cbc81: #3cbc81;
+  --c-rgba22022722906: rgba(220, 227, 229, 0.6);
+  --c-dce3e5: #dce3e5;
+  --c-rgba136165191048: rgba(136, 165, 191, 0.48);
+
+  /* logout */
+  --c-2b78ef: #2b78ef;
+
+  /* header */
+  --shadow-3: rgba(0, 0, 0, 0.07);
+  --shadow-4: rgba(0, 0, 0, 0.035);
+
+  /* profile */
+  --c-f8f8f8: #f8f8f8;
+  --c-rgba62133243018: rgba(62, 133, 243, 0.18);
+  --c-ea3d65: #ea3d65;
+
+  /* date picker */
+  --c-dce3e599: #dce3e599;
+
+  /* tasks */
+  --c-f3b249: #f3b249;
+  --c-ceeefd: #ceeefd;
+  --c-fcf0d4: #fcf0d4;
+  --c-ffd2dd: #ffd2dd;
+  --c-rgba14614314309: rgba(146, 143, 143, 0.9);
+  --c-52555f: #52555f;
+
+  /* modal */
+  --c-rgba17171701: rgba(17, 17, 17, 0.1);
+  --c-rgba255255255015: rgba(255, 255, 255, 0.15);
+  --c-4096ff: #4096ff;
+  --c-rgba514525501: rgba(5, 145, 255, 0.1);
+  --c-72c2f8: #72c2f8;
+  --c-rgba11419424803: rgba(114, 194, 248, 0.3);
+  --c-rgba2431787303: rgba(243, 178, 73, 0.3);
+  --c-rgba2346110103: rgba(234, 61, 101, 0.3);
+  --c-rgba11419424807: rgba(114, 194, 248, 0.7);
+  --c-rgba52525208: rgba(52, 52, 52, 0.8);
+  --c-f7f6f9: #f7f6f9;
+  --c-919191: #919191;
+  --c-616161: #616161;
+}
+
+html[data-theme='light'] {
+  /* sidebar */
+  --ld-ffffff-13151a: #ffffff;
+  --ld-7e7d82-rgba250250250030: #7e7d82;
+  --ld-343434-ffffff: #343434;
+
+  /* logo */
+  --ld-3e85f3-e3f3ff: #3e85f3;
+
+  /* logout */
+  --ld-rgba136165191048-rgba136165191030: rgba(136, 165, 191, 0.48);
+
+  /* navigation */
+  --ld-84828a-ffffff: #84828a;
+  --ld-e3f3ff-3e85f3: #e3f3ff;
+  --ld-3e85f3-ffffff: #3e85f3;
+
+  /* header */
+  --ld-f7f6f9-171820: #f7f6f9;
+  --ld-111111-ffffff: #111111;
+
+  /* profile */
+  --ld-f7f6f9-919191: #f7f6f9;
+  --ld-f2f2f2-21222c: #f2f2f2;
+  --ld-e7e5e5-2d3037: #e7e5e5;
+  --ld-ffffff-21222c: #ffffff;
+  --ld-616161-rgba250250250030: #616161;
+  --ld-111111-rgba250250250030: #111111;
+  --ld-rgba171717015-rgba255255255015: rgba(17, 17, 17, 0.15);
+  --ld-c3bcbc-transparent: #c3bcbc;
+  --ld-rgba171717054-rgba255255255054: rgba(17, 17, 17, 0.54);
+
+  /* period type select */
+  --ld-e3f3ff-21222c: #e3f3ff;
+  --ld-rgba6213324302-rgba255255255015: rgba(62, 133, 243, 0.2);
+  --ld-cae8ff-3e85f3: #cae8ff;
+
+  /* period paginator */
+  --ld-616161-ffffff: #616161;
+  --ld-rgba22022722905-rgba255255255015: rgba(220, 227, 229, 0.5);
+
+  /* month head */
+  --ld-ffffff-22232d: #ffffff;
+
+  /* modal tasks */
+  --ld-ffffff-171820: #ffffff;
+  --ld-rgba22022722908-transparent: rgba(220, 227, 229, 0.8);
+  --ld-rgba52525208-rgba25025025003: rgba(52, 52, 52, 0.8);
+  --ld-f6f6f6-transparent: #f6f6f6;
+  --ld-212121-ffffff: #212121;
+  --ld-cae8ff-transparent: #cae8ff;
+  --ld-rgba000020-rgba000025: rgba(0, 0, 0, 0.2);
+
+  /* filter */
+  --ld-rgba000008-c1b3b3e9: rgba(0, 0, 0, 0.08);
+  --ld-rgba000054-ffffff: rgba(0, 0, 0, 0.54);
+  --ld-ffffff-efe8e8: #ffffff;
+  --ld-rgb230225225-rgb203199199: rgb(230, 225, 225);
+  --ld-rgba000023-rgba255255255015: rgba(0, 0, 0, 0.23);
+}
+
+html[data-theme='dark'] {
+  /* sidebar */
+  --ld-ffffff-13151a: #13151a;
+  --ld-7e7d82-rgba250250250030: rgba(250, 250, 250, 0.3);
+  --ld-343434-ffffff: #ffffff;
+
+  /* logo */
+  --ld-3e85f3-e3f3ff: #e3f3ff;
+
+  /* logout */
+  --ld-rgba136165191048-rgba136165191030: rgba(136, 165, 191, 0.3);
+
+  /* navigation */
+  --ld-84828a-ffffff: #ffffff;
+  --ld-e3f3ff-3e85f3: #3e85f3;
+  --ld-3e85f3-ffffff: #ffffff;
+
+  /* header */
+  --ld-f7f6f9-171820: #171820;
+  --ld-111111-ffffff: #ffffff;
+
+  /* profile */
+  --ld-f7f6f9-919191: #919191;
+  --ld-f2f2f2-21222c: #21222c;
+  --ld-e7e5e5-2d3037: #2d3037;
+  --ld-ffffff-21222c: #21222c;
+  --ld-616161-rgba250250250030: rgba(250, 250, 250, 0.3);
+  --ld-111111-rgba250250250030: rgba(250, 250, 250, 0.3);
+  --ld-rgba171717015-rgba255255255015: rgba(255, 255, 255, 0.15);
+  --ld-c3bcbc-transparent: transparent;
+  --ld-rgba171717054-rgba255255255054: rgba(255, 255, 255, 0.54);
+
+  /* period type select */
+  --ld-e3f3ff-21222c: #21222c;
+  --ld-rgba6213324302-rgba255255255015: rgba(255, 255, 255, 0.15);
+  --ld-cae8ff-3e85f3: #3e85f3;
+
+  /* period paginator */
+  --ld-616161-ffffff: #ffffff;
+  --ld-rgba22022722905-rgba255255255015: rgba(255, 255, 255, 0.15);
+
+  /* month head */
+  --ld-ffffff-22232d: #22232d;
+  --ld-rgba250250250030-ffffff: #ffffff;
+
+  /* modal tasks */
+  --ld-ffffff-171820: #171820;
+  --ld-rgba22022722908-transparent: transparent;
+  --ld-rgba52525208-rgba25025025003: rgba(250, 250, 250, 0.3);
+  --ld-f6f6f6-transparent: transparent;
+  --ld-212121-ffffff: #ffffff;
+  --ld-cae8ff-transparent: transparent;
+  --ld-rgba000020-rgba000025: rgba(0, 0, 0, 0.25);
+
+  /* filter */
+  --ld-rgba000008-c1b3b3e9: #c1b3b3e9;
+  --ld-rgba000054-ffffff: #ffffff;
+  --ld-ffffff-efe8e8: #efe8e8;
+  --ld-rgb230225225-rgb203199199: rgb(203, 199, 199);
+  --ld-rgba000023-rgba255255255015: rgba(255, 255, 255, 0.15);
+}

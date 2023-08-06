@@ -1,0 +1,149 @@
+.container {
+   padding: 0 20px 64px;
+
+   display: flex;
+   flex-direction: column;
+
+   @media screen and (min-width: 768px) {
+      padding: 0 94px 100px;
+   }
+
+   @media screen and (min-width: 1440px) {
+      padding: 0 128px 100px;
+   }
+}
+
+.title {
+   color: var(--accent);
+
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 1.143;
+   text-align: center;
+   text-transform: uppercase;
+
+   margin-bottom: 40px;
+
+   @media screen and (min-width: 768px) {
+      font-size: 40px;
+      line-height: 1.1;
+
+      margin-bottom: 50px;
+   }
+}
+
+.list {
+   list-style: none;
+}
+
+.item {
+   width: 335px;
+
+   margin: 0 auto 30px;
+
+   border: 1px solid var(--c-ebe8e4);
+   border-radius: 8px;
+
+   @media screen and (min-width: 768px) {
+      width: 580px;
+   }
+
+   @media screen and (min-width: 1440px) {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+
+      padding: 0;
+
+      border: none;
+   }
+}
+
+.boxLeft {
+   @media screen and (min-width: 1440px) {
+      margin-left: 12px;
+   }
+}
+
+.boxRight {
+   @media screen and (min-width: 1440px) {
+      margin-right: 12px;
+   }
+}
+
+.mainBox {
+   padding: 24px;
+
+   @media screen and (min-width: 768px) {
+      padding: 32px;
+   }
+
+   @media screen and (min-width: 1440px) {
+      border: 1px solid var(--c-ebe8e4);
+      border-radius: 8px;
+   }
+}
+
+.box {
+   display: inline-flex;
+   gap: 18px;
+}
+
+.imgBox {
+   width: 50px;
+   border-radius: 50%;
+}
+
+.photo {
+   width: 50px;
+   height: 50px;
+
+   border-radius: 50%;
+}
+
+.wrapper {
+   text-align: left;
+}
+
+.name {
+   color: var(--c-343434);
+
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1;
+
+   margin-bottom: 13px;
+}
+
+.starBox {
+   display: flex;
+   justify-content: flex-start;
+   gap: 10px;
+}
+
+.starActive {
+   color: var(--c-ffac33);
+
+   display: inline-flex;
+}
+
+.star {
+   color: var(--c-cec9c1);
+
+   display: inline-flex;
+}
+
+.text {
+   color: var(--c-rgba17171707);
+
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.286;
+   text-align: left;
+
+   @media screen and (min-width: 768px) {
+      min-width: 432px;
+
+      margin-left: 70px;
+   }
+}
