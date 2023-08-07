@@ -1,13 +1,13 @@
 import axios from 'axios';
 
 export const privateAPI = axios.create({
-  //   baseURL: 'https://goose-track-rest-api.onrender.com/',
-  baseURL: 'http://localhost:3001/',
+  baseURL: 'https://goose-track-rest-api-s6pu.onrender.com',
+  //   baseURL: 'http://localhost:3001/',
 });
 
 export const publicAPI = axios.create({
-  //   baseURL: 'https://goose-track-rest-api.onrender.com/',
-  baseURL: 'http://localhost:3001/',
+  baseURL: 'https://goose-track-rest-api-s6pu.onrender.com',
+  //   baseURL: 'http://localhost:3001/',
 });
 
 // Utility to add JWT
