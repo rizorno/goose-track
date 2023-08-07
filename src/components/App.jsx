@@ -36,15 +36,19 @@ export const App = () => {
     // refresh 2 minutes in ms before expiry
     // milliseconds * seconds * minutes * hours * days
     const refreshInterval =
-      time - new Date().getTime() <= 1000 * 60 * 2 * 1 * 1
+      time - new Date().getTime() === 1000 * 60 * 2 * 1 * 1
         ? 0
+        : time - new Date().getTime() < 1000 * 60 * 2 * 1 * 1
+        ? 1000 * 60 * 2 * 1 * 1
         : time - new Date().getTime() - 1000 * 60 * 2 * 1 * 1;
 
-    if(time) {
+    if (time) {
       setInterval(() => {
-         dispatch(refreshTokenThunk());
-       }, refreshInterval);
-    } else {return}
+        dispatch(refreshTokenThunk());
+      }, refreshInterval);
+    } else {
+      return;
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
