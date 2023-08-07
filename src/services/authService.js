@@ -10,11 +10,6 @@ export const loginUserAPI = async user => {
   return data;
 };
 
-export const verifyEmailAPI = async verificationToken => {
-  const { data } = await publicAPI.get(`api/auth/verify/${verificationToken}`);
-  return data;
-};
-
 export const resendVerifyEmailAPI = async email => {
   const { data } = await publicAPI.post('api/auth/verify', email);
   return data;

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { getCurrentUserThunk } from 'redux/auth/authOperations';
 import { getUser } from 'redux/auth/authSelectors';
 import { selectReviews } from 'redux/reviews/reviewsSelectors';
 import { addReviewThunk } from 'redux/reviews/reviewsOperations';
@@ -31,7 +32,7 @@ const ModalReview = ({ closeModal }) => {
     setUserRating(value);
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
 
     const dataReview = {
@@ -49,7 +50,9 @@ const ModalReview = ({ closeModal }) => {
       return;
     }
 
-    dispatch(addReviewThunk(dataReview)).unwrap();
+    await dispatch(addReviewThunk(dataReview)).unwrap();
+
+    dispatch(getCurrentUserThunk());
 
     closeModal(false);
   };

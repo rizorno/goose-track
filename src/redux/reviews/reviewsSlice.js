@@ -36,7 +36,7 @@ const reviewsSlice = createSlice({
       .addCase(addReviewThunk.pending, handlePending)
       .addCase(addReviewThunk.fulfilled, (state, { payload }) => {
         state.isLoading = false;
-        state.reviews = [...state.reviews, payload.result];
+        state.reviews = [...state.reviews, payload];
         state.error = null;
       })
       .addCase(addReviewThunk.rejected, handleRejected);

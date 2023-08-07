@@ -9,7 +9,6 @@ import {
   updateAvatarThunk,
   deleteUserThunk,
 } from './authOperations';
-import { addReviewThunk } from 'redux/reviews/reviewsOperations';
 
 const initialState = {
   token: null,
@@ -131,17 +130,7 @@ const authSlice = createSlice({
       .addCase(deleteUserThunk.fulfilled, () => {
         return initialState;
       })
-      .addCase(deleteUserThunk.rejected, handleRejected)
-      
-      //? add status review
-
-      .addCase(addReviewThunk.pending, handlePending)
-      .addCase(addReviewThunk.fulfilled, (state, { payload }) => {
-        state.isLoading = false;
-        state.user.review = payload.review;
-        state.error = null;
-      })
-      .addCase(addReviewThunk.rejected, handleRejected);;
+      .addCase(deleteUserThunk.rejected, handleRejected);
   },
 });
 export const authReducer = authSlice.reducer;
