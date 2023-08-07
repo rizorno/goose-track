@@ -43,7 +43,7 @@ const UserProfile = () => {
     const profileData = {
       name: values.name.trim(),
       birthday: values.birthday,
-      email: values.email.trim(),
+      // email: values.email.trim(),
       phone: values.phone.trim(),
       skype: values.skype.trim(),
     };
@@ -53,7 +53,7 @@ const UserProfile = () => {
 
       (values.name.trim() !== user.name ||
         values.birthday.toISOString() !== user.birthday ||
-        values.email.trim() !== user.email ||
+      //   values.email.trim() !== user.email ||
         values.phone.trim() !== user.phone ||
         values.skype.trim() !== user.skype) &&
         (await dispatch(updateUserThunk(profileData)));
