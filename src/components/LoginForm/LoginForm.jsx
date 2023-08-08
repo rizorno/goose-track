@@ -204,7 +204,9 @@ const LoginForm = () => {
 
         <div className={css.btnEmailBox}>
           <p className={css.btnEmailTitle}>Resend a verification email?</p>
-          <button className={css.btnEmail} onClick={toggleModal}>Yes</button>
+          <button className={css.btnEmail} onClick={toggleModal}>
+            Yes
+          </button>
         </div>
 
         {modalVerify && (
