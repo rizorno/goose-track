@@ -127,6 +127,7 @@ export const refreshTokenThunk = createAsyncThunk(
       setAuthHeader(result.token);
       return result;
     } catch (error) {
+      localStorage.clear()
       return rejectWithValue(
         `${error.response.data.message}. Status code ${error.response.status}`
       );
