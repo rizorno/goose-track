@@ -1,8 +1,8 @@
 .choosedMonthWrapper {
-  height: calc(100vh - 80px - 98px - 52px - 14px - 20px - 50px);
+  height: calc(100vh - 80px - 98px - 52px - 14px - 20px);
 
-  overflow-y: auto;
-  overflow-x: hidden;
+  //   overflow-y: auto;
+  //   overflow-x: hidden;
 
   @media (min-width: 768px) {
     height: calc(100vh - 250px - 42px);
