@@ -3,22 +3,26 @@
 
   border: 1px solid var(--ld-rgba22022722905-rgba255255255015);
   border-radius: 8px;
-
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .calendarTableStyle {
   width: 100%;
-  max-height: calc(100vh - 80px - 98px - 52px - 14px);
+  max-height: calc(100vh - 80px - 98px - 52px - 14px - 20px);
+
+  overflow-y: auto;
+  overflow-x: hidden;
 
   border-collapse: collapse;
   border-spacing: 0;
   border-style: hidden;
   border-radius: 50px;
 
+  //   padding-bottom: 50px;
+
   @media (min-width: 768px) {
     max-height: calc(100vh - 282px - 42px);
+
+    padding-bottom: 0;
   }
 
   @media (min-width: 1440px) {
