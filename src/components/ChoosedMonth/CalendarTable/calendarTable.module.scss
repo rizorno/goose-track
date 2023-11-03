@@ -1,12 +1,12 @@
 .calendarTableWrapper {
-  max-height: calc(100vh - 80px - 98px - 52px - 14px - 20px);
+  max-height: calc(100vh - 80px - 98px - 52px - 14px - 20px - 100px);
 
   overflow-y: auto;
   overflow-x: hidden;
 
   background-color: var(--ld-ffffff-21222c);
 
-  padding-bottom: 100px;
+  //   padding-bottom: 100px;
 
   border: 1px solid var(--ld-rgba22022722905-rgba255255255015);
   border-radius: 8px;
