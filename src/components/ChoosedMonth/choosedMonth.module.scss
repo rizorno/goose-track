@@ -1,17 +1,4 @@
 .choosedMonthWrapper {
-  height: calc(100vh - 80px - 98px - 52px - 14px - 20px);
-
-  //   overflow-y: auto;
-  //   overflow-x: hidden;
-
-  @media (min-width: 768px) {
-    height: calc(100vh - 250px - 42px);
-  }
-
-  @media (min-width: 1440px) {
-    height: calc(100vh - 250px - 32px);
-  }
-
   &::-webkit-scrollbar {
     height: 14px;
     max-width: 360px;
@@ -25,5 +12,29 @@
     background-color: var(--ld-e7e5e5-2d3037);
 
     border-radius: 12px;
+  }
+}
+
+.calendar {
+  height: calc(100vh - 80px - 98px - 52px - 14px - 20px);
+
+  @media (min-width: 768px) {
+    height: calc(100vh - 250px - 42px);
+  }
+
+  @media (min-width: 1440px) {
+    height: calc(100vh - 250px - 32px);
+  }
+}
+
+.filter {
+  height: calc(100vh - 80px - 216px - 52px - 14px - 20px);
+
+  @media (min-width: 768px) {
+    height: calc(100vh - 100px - 97px - 24px - 48px - 24px - 42px);
+  }
+
+  @media (min-width: 1440px) {
+    max-height: calc(100vh - 116px - 48px - 24px - 48px - 24px - 20px);
   }
 }

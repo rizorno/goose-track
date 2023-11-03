@@ -1,3 +1,4 @@
+import { useLocation } from 'react-router';
 import { useSelector } from 'react-redux';
 import { isWithinInterval } from 'date-fns';
 import { useDaysOfMonth } from 'hooks/useDaysOfMonth';
@@ -8,6 +9,9 @@ import CalendarTable from './CalendarTable/CalendarTable';
 import css from './choosedMonth.module.scss';
 
 const ChoosedMonth = () => {
+  const location = useLocation();
+  const { pathname } = location;
+
   const currentDate = useSelector(selectDate);
 
   const tasks = useSelector(selectArrTasks);
@@ -22,7 +26,13 @@ const ChoosedMonth = () => {
   return (
     <>
       <MonthCalendarHead />
-      <div className={css.choosedMonthWrapper}>
+      <div
+        className={
+          pathname.includes('filter')
+            ? `${css.choosedMonthWrapper} ${css.filter}`
+            : `${css.choosedMonthWrapper} ${css.calendar}`
+        }
+      >
         <CalendarTable tasks={filteredDates} currentDate={currentDate} />
       </div>
     </>

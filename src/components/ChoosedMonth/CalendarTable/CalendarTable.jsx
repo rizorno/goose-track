@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router';
+import { useNavigate, useLocation } from 'react-router';
 import PropTypes from 'prop-types';
 import { format } from 'date-fns';
 import { useDaysOfMonth } from 'hooks/useDaysOfMonth';
@@ -10,6 +10,8 @@ import css from './calendarTable.module.scss';
 const CalendarTable = ({ tasks, currentDate }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const location = useLocation();
+  const { pathname } = location;
 
   const { daysOfMonth, firstDayOfMonth } = useDaysOfMonth(currentDate);
 
@@ -50,7 +52,13 @@ const CalendarTable = ({ tasks, currentDate }) => {
   });
 
   return (
-    <div className={css.calendarTableWrapper}>
+    <div
+      className={
+        pathname.includes('filter')
+          ? `${css.calendarTableWrapper} ${css.filter}`
+          : `${css.calendarTableWrapper} ${css.calendar}`
+      }
+    >
       <table className={css.calendarTableStyle}>
         <tbody className={css.claendarTableBody}>{rows}</tbody>
       </table>
