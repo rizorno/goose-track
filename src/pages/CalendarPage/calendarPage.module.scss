@@ -1,9 +1,9 @@
 .calendarPageContainer {
-  height: calc(100vh - 52px);
+  height: calc(100vh - 80px);
 
   background-color: var(--ld-f7f6f9-171820);
 
-  padding: 0 20px 52px;
+  padding: 0 20px 102px;
 
   @media (min-width: 768px) {
     height: calc(100vh - 42px);
