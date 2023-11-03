@@ -1,31 +1,31 @@
 .calendarTableWrapper {
-   background-color: var(--ld-ffffff-21222c);
+  background-color: var(--ld-ffffff-21222c);
 
-   border: 1px solid var(--ld-rgba22022722905-rgba255255255015);
-   border-radius: 8px;
+  border: 1px solid var(--ld-rgba22022722905-rgba255255255015);
+  border-radius: 8px;
 
-   overflow-y: auto;
-   overflow-x: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .calendarTableStyle {
-   width: 100%;
-   max-height: calc(100vh - 282px - 52px);
+  width: 100%;
+  max-height: calc(100vh - 282px - 52px);
 
-   border-collapse: collapse;
-   border-spacing: 0;
-   border-style: hidden;
-   border-radius: 50px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-style: hidden;
+  border-radius: 50px;
 
-   @media (min-width: 768px) {
-      max-height: calc(100vh - 282px - 42px);
-   }
+  @media (min-width: 768px) {
+    max-height: calc(100vh - 282px - 42px);
+  }
 
-   @media (min-width: 1440px) {
-      max-height: calc(100vh - 282px - 32px);
-   }
+  @media (min-width: 1440px) {
+    max-height: calc(100vh - 282px - 32px);
+  }
 }
 
 .claendarTableBody {
-   width: 100%;
+  width: 100%;
 }

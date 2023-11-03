@@ -1,73 +1,73 @@
 .tasksListStyle {
-   list-style: none;
+  list-style: none;
 
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   gap: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
 }
 
 .tasksListItem {
-   font-weight: 700;
-   font-size: 10px;
-   line-height: 1.4;
-   text-align: left;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: left;
 
-   padding: 2px 0;
+  padding: 2px 0;
 
-   transition: scale 250ms linear;
+  transition: scale 250ms linear;
 
-   cursor: pointer;
+  cursor: pointer;
 
-   &:hover,
-   &:focus {
-      scale: 1.05;
-   }
+  &:hover,
+  &:focus {
+    scale: 1.05;
+  }
 }
 
 .lowColor,
 .mediumColor,
 .highColor {
-   min-width: 35px;
+  min-width: 35px;
 
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-   padding: 3px;
+  padding: 3px;
 
-   border-radius: 8px;
+  border-radius: 8px;
 
-   @media (min-width: 768px) {
-      min-width: 80px;
+  @media (min-width: 768px) {
+    min-width: 80px;
 
-      font-size: 14px;
-      line-height: 1.286;
+    font-size: 14px;
+    line-height: 1.286;
 
-      padding: 3px 7px;
-   }
+    padding: 3px 7px;
+  }
 
-   @media (min-width: 1440px) {
-      min-width: 130px;
-   }
+  @media (min-width: 1440px) {
+    min-width: 130px;
+  }
 }
 
 .lowColor {
-   background-color: var(--c-ceeefd);
-   color: var(--accent);
+  background-color: var(--c-ceeefd);
+  color: var(--accent);
 }
 
 .mediumColor {
-   background-color: var(--c-fcf0d4);
-   color: var(--c-f3b249);
+  background-color: var(--c-fcf0d4);
+  color: var(--c-f3b249);
 }
 
 .highColor {
-   background-color: var(--c-ffd2dd);
-   color: var(--c-ea3d65);
+  background-color: var(--c-ffd2dd);
+  color: var(--c-ea3d65);
 }
 
 .iconCheck {
-   width: 10px;
-   height: 10px;
+  width: 10px;
+  height: 10px;
 }

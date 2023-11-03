@@ -1,36 +1,36 @@
 .monthHeadList {
-   list-style: none;
+  list-style: none;
 
-   background-color: var(--ld-ffffff-22232d);
-   color: var(--ld-616161-ffffff);
+  background-color: var(--ld-ffffff-22232d);
+  color: var(--ld-616161-ffffff);
 
-   display: flex;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-   font-weight: 600;
-   font-size: 16px;
-   line-height: 1.125;
-   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.125;
+  text-transform: uppercase;
 
-   padding: 16px;
-   margin-bottom: 14px;
+  padding: 16px;
+  margin-bottom: 14px;
 
-   border: 1px solid var(--ld-rgba22022722905-rgba255255255015);
-   border-radius: 8px;
+  border: 1px solid var(--ld-rgba22022722905-rgba255255255015);
+  border-radius: 8px;
 
-   @media screen and (min-width: 768px) {
-      background-color: var(--ld-ffffff-21222c);
+  @media screen and (min-width: 768px) {
+    background-color: var(--ld-ffffff-21222c);
 
-      padding: 14px 40px;
-      margin-bottom: 18px;
-   }
+    padding: 14px 40px;
+    margin-bottom: 18px;
+  }
 
-   @media screen and (min-width: 1440px) {
-      padding: 14px 60px;
-      margin-bottom: 15px;
-   }
+  @media screen and (min-width: 1440px) {
+    padding: 14px 60px;
+    margin-bottom: 15px;
+  }
 }
 
 .monthHeadItem {
-   color: var(--accent);
+  color: var(--accent);
 }

@@ -1,187 +1,188 @@
 .popupForm {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .closeBtn {
-   position: absolute;
-   top: 10px;
-   right: 14px;
+  position: absolute;
+  top: 10px;
+  right: 14px;
 
-   width: 20px;
-   height: 20px;
+  width: 20px;
+  height: 20px;
 
-   background-color: transparent;
+  background-color: transparent;
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-   border: none;
-   border-radius: 50%;
+  border: none;
+  border-radius: 50%;
 
-   cursor: pointer;
+  cursor: pointer;
 
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-   &:hover,
-   &:focus {
-      transform: rotateZ(90deg);
-      border: 2.5px solid var(--c-rgba11419424807);
-   }
+  &:hover,
+  &:focus {
+    transform: rotateZ(90deg);
+    border: 2.5px solid var(--c-rgba11419424807);
+  }
 }
 
 .btnCloseIcon {
-   width: 20px;
-   height: 20px;
+  width: 20px;
+  height: 20px;
 
-   stroke: var(--ld-212121-ffffff);
+  stroke: var(--ld-212121-ffffff);
 }
 
 .titleLabel {
-   width: 100%;
+  width: 100%;
 
-   color: var(--ld-rgba52525208-rgba25025025003);
+  color: var(--ld-rgba52525208-rgba25025025003);
 
-   font-weight: 500;
-   font-size: 12px;
-   line-height: 1.167;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.167;
 
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
-   gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
 
-   margin-bottom: 16px;
+  margin-bottom: 16px;
 
-   @media screen and (min-width: 768px) {
-      margin-bottom: 18px;
-   }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 18px;
+  }
 }
 
 .title {
-   width: 26px;
-   height: 14px;
+  width: 26px;
+  height: 14px;
 
-   font-weight: 500;
-   font-size: 12px;
-   line-height: 1.167;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.167;
 
-   color: var(--c-919191);
+  color: var(--c-919191);
 }
 
 .modalInput,
 .modalTextArea {
-   width: 100%;
-   height: 42px;
+  width: 100%;
+  height: 42px;
 
-   background-color: var(--ld-f6f6f6-transparent);
-   color: var(--ld-616161-ffffff);
+  background-color: var(--ld-f6f6f6-transparent);
+  color: var(--ld-616161-ffffff);
 
-   font-weight: 600;
-   font-size: 14px;
-   line-height: 1.286;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.286;
 
-   padding: 12px 14px;
+  padding: 12px 14px;
 
-   border: 1px solid var(--c-rgba255255255015);
-   border-radius: 8px;
+  border: 1px solid var(--c-rgba255255255015);
+  border-radius: 8px;
 
-   outline: none;
+  outline: none;
 
-   transition: 200ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 200ms cubic-bezier(0.19, 1, 0.22, 1);
 
-   @media screen and (min-width: 768px) {
-      width: 100%;
-      height: 46px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 46px;
 
-      padding: 14px 18px;
-   }
+    padding: 14px 18px;
+  }
 
-   &::placeholder {
-      font-weight: 500;
-   }
+  &::placeholder {
+    font-weight: 500;
+  }
 
-   &:hover,
-   &:focus {
-      border: 1px solid var(--c-4096ff);
-   }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--c-4096ff);
+  }
 }
 
 .modalTextArea {
-   height: 100%;
+  height: 100%;
 }
 
 .btnWrapper {
-   width: 100%;
+  width: 100%;
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
 }
 
 .btnAdd,
 .btnCancel {
-   width: 100%;
+  width: 100%;
 
-   background-color: var(--accent);
-   color: var(--white);
+  background-color: var(--accent);
+  color: var(--white);
 
-   stroke: var(--white);
+  stroke: var(--white);
 
-   font-weight: 600;
-   font-size: 14px;
-   line-height: 1.286;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.286;
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 
-   padding: 12px 0;
+  padding: 12px 0;
 
-   border: none;
-   border-radius: 8px;
+  border: none;
+  border-radius: 8px;
 
-   box-shadow: 0 3px 3px 0 rgb(0 0 0 / 14%), 0 1px 7px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%);
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 14%), 0 1px 7px 0 rgb(0 0 0 / 12%),
+    0 3px 1px -2px rgb(0 0 0 / 20%);
 
-   cursor: pointer;
+  cursor: pointer;
 
-   &:active {
-      transform: translateY(1px);
-   }
+  &:active {
+    transform: translateY(1px);
+  }
 
-   &[disabled] {
-      background-color: var(--c-919191);
-      color: var(--black);
+  &[disabled] {
+    background-color: var(--c-919191);
+    color: var(--black);
 
-      stroke: var(--black);
+    stroke: var(--black);
 
-      cursor: auto;
+    cursor: auto;
 
-      &:active {
-         transform: translateY(0);
-      }
-   }
+    &:active {
+      transform: translateY(0);
+    }
+  }
 }
 
 .btnAddIcon {
-   width: 18px;
-   height: 18px;
+  width: 18px;
+  height: 18px;
 
-   padding: 3px;
+  padding: 3px;
 }
 
 .btnCancel {
-   background-color: var(--c-919191);
-   color: var(--black);
+  background-color: var(--c-919191);
+  color: var(--black);
 
-   &:hover {
-      background-color: var(--accent);
-      color: var(--white);
-   }
+  &:hover {
+    background-color: var(--accent);
+    color: var(--white);
+  }
 }

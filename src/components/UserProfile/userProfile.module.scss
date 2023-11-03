@@ -1,394 +1,394 @@
 .userContainer {
-   height: calc(100vh - 88px);
+  height: calc(100vh - 88px);
 
-   background-color: var(--ld-f7f6f9-171820);
+  background-color: var(--ld-f7f6f9-171820);
 
-   padding: 31px 20px 40px;
+  padding: 31px 20px 40px;
 
-   overflow-y: auto;
+  overflow-y: auto;
 
-   @media screen and (min-width: 768px) {
-      height: calc(100vh - 100px);
+  @media screen and (min-width: 768px) {
+    height: calc(100vh - 100px);
 
-      padding: 0 32px 32px;
-   }
+    padding: 0 32px 32px;
+  }
 
-   @media screen and (min-width: 1440px) {
-      height: calc(100vh - 84px);
+  @media screen and (min-width: 1440px) {
+    height: calc(100vh - 84px);
 
-      padding: 0 32px 32px;
-   }
+    padding: 0 32px 32px;
+  }
 
-   &::-webkit-scrollbar {
-      max-width: 360px;
-      height: 14px;
+  &::-webkit-scrollbar {
+    max-width: 360px;
+    height: 14px;
 
-      background-color: var(--ld-f2f2f2-21222c);
+    background-color: var(--ld-f2f2f2-21222c);
 
-      border-radius: 12px;
-   }
-   &::-webkit-scrollbar-thumb {
-      background-color: var(--ld-e7e5e5-2d3037);
+    border-radius: 12px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--ld-e7e5e5-2d3037);
 
-      border-radius: 12px;
-   }
+    border-radius: 12px;
+  }
 }
 
 .userWrapper {
-   position: relative;
+  position: relative;
 
-   background-color: var(--ld-ffffff-21222c);
+  background-color: var(--ld-ffffff-21222c);
 
-   padding: 135px 18px 40px;
+  padding: 135px 18px 40px;
 
-   border-radius: 16px;
+  border-radius: 16px;
 
-   @media screen and (min-width: 768px) {
-      padding: 40px 0 40px;
-   }
+  @media screen and (min-width: 768px) {
+    padding: 40px 0 40px;
+  }
 
-   @media screen and (min-width: 1440px) {
-      height: calc(100vh - 23%);
+  @media screen and (min-width: 1440px) {
+    height: calc(100vh - 23%);
 
-      padding: 20px 0 20px;
-   }
+    padding: 20px 0 20px;
+  }
 }
 
 .formAvatar {
-   position: absolute;
-   top: -31px;
-   left: 50%;
-   transform: translateX(-50%);
+  position: absolute;
+  top: -31px;
+  left: 50%;
+  transform: translateX(-50%);
 
-   text-align: center;
+  text-align: center;
 
-   @media screen and (min-width: 768px) {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: translateX(0%);
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
 
-      display: block;
+    display: block;
 
-      margin: 0 auto 20px;
-   }
+    margin: 0 auto 20px;
+  }
 }
 
 .containerAvatar {
-   position: relative;
+  position: relative;
 
-   width: 72px;
-   height: 72px;
+  width: 72px;
+  height: 72px;
 
-   background-color: var(--c-f8f8f8);
-   color: var(--c-rgba62133243018);
+  background-color: var(--c-f8f8f8);
+  color: var(--c-rgba62133243018);
 
-   object-fit: cover;
+  object-fit: cover;
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-   margin: 0 auto 18px;
+  margin: 0 auto 18px;
 
-   border: 2px solid var(--accent);
-   border-radius: 50%;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
 
-   @media screen and (min-width: 768px) {
-      width: 124px;
-      height: 124px;
+  @media screen and (min-width: 768px) {
+    width: 124px;
+    height: 124px;
 
-      margin-bottom: 20px;
-   }
+    margin-bottom: 20px;
+  }
 }
 
 .avatarImage {
-   width: 100%;
-   height: 100%;
+  width: 100%;
+  height: 100%;
 
-   border-radius: 50%;
+  border-radius: 50%;
 }
 
 .inputUpload {
-   position: absolute;
-   bottom: -7px;
-   right: 12px;
+  position: absolute;
+  bottom: -7px;
+  right: 12px;
 
-   width: 17px;
-   height: 17px;
+  width: 17px;
+  height: 17px;
 
-   opacity: 0;
+  opacity: 0;
 
-   @media screen and (min-width: 768px) {
-      bottom: -9px;
-      right: 21px;
+  @media screen and (min-width: 768px) {
+    bottom: -9px;
+    right: 21px;
 
-      width: 26px;
-      height: 26px;
+    width: 26px;
+    height: 26px;
 
-      font-size: 20px;
-   }
+    font-size: 20px;
+  }
 }
 
 .btnUpload {
-   position: absolute;
-   bottom: -5px;
-   right: 14px;
+  position: absolute;
+  bottom: -5px;
+  right: 14px;
 
-   width: 14px;
-   height: 14px;
+  width: 14px;
+  height: 14px;
 
-   background-color: var(--accent);
-   color: var(--white);
+  background-color: var(--accent);
+  color: var(--white);
 
-   display: inline-flex;
-   justify-content: center;
-   align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
-   border: transparent;
-   border-radius: 50%;
+  border: transparent;
+  border-radius: 50%;
 
-   cursor: pointer;
+  cursor: pointer;
 
-   @media screen and (min-width: 768px) {
-      bottom: -8px;
-      right: 22px;
+  @media screen and (min-width: 768px) {
+    bottom: -8px;
+    right: 22px;
 
-      width: 24px;
-      height: 24px;
+    width: 24px;
+    height: 24px;
 
-      font-size: 20px;
-   }
+    font-size: 20px;
+  }
 }
 
 .avatarName {
-   color: var(--ld-343434-ffffff);
+  color: var(--ld-343434-ffffff);
 
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.286;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.286;
 
-   margin-bottom: 4px;
+  margin-bottom: 4px;
 
-   @media screen and (min-width: 768px) {
-      font-size: 18px;
-      line-height: 1;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1;
 
-      margin-top: 20px;
-      margin-bottom: 8px;
-   }
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
 }
 
 .avatarRole {
-   color: var(--ld-616161-rgba250250250030);
+  color: var(--ld-616161-rgba250250250030);
 
-   font-weight: 600;
-   font-size: 12px;
-   line-height: 1.167;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.167;
 
-   @media screen and (min-width: 768px) {
-      font-size: 14px;
-      line-height: 1.29;
-   }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 
 .formCenter {
-   display: grid;
-   row-gap: 24px;
-   width: 100%;
+  display: grid;
+  row-gap: 24px;
+  width: 100%;
 
-   @media screen and (min-width: 1440px) {
-      grid-template-columns: 1fr 1fr;
-      column-gap: 50px;
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
 
-      row-gap: 14px;
-   }
+    row-gap: 14px;
+  }
 }
 
 .formRow {
-   position: relative;
+  position: relative;
 
-   width: 100%;
+  width: 100%;
 
-   margin: 0 auto;
+  margin: 0 auto;
 
-   @media screen and (min-width: 375px) {
-      max-width: 299px;
-   }
+  @media screen and (min-width: 375px) {
+    max-width: 299px;
+  }
 
-   @media screen and (min-width: 768px) {
-      max-width: 354px;
-   }
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
 }
 
 .formLabel {
-   color: var(--ld-111111-rgba250250250030);
+  color: var(--ld-111111-rgba250250250030);
 
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 1.167;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
 
-   display: flex;
-   flex-direction: column;
-   gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
-   @media screen and (min-width: 768px) {
-      font-size: 14px;
-      line-height: 1.29;
-   }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 
 .formInput {
-   width: 100%;
+  width: 100%;
 
-   background-color: var(--ld-ffffff-21222c);
-   color: var(--ld-111111-ffffff);
+  background-color: var(--ld-ffffff-21222c);
+  color: var(--ld-111111-ffffff);
 
-   font-size: 14px;
-   line-height: 1.286;
+  font-size: 14px;
+  line-height: 1.286;
 
-   padding: 12px 14px;
+  padding: 12px 14px;
 
-   border: 1px solid var(--ld-rgba171717015-rgba255255255015);
-   border-radius: 8px;
+  border: 1px solid var(--ld-rgba171717015-rgba255255255015);
+  border-radius: 8px;
 
-   outline: none;
+  outline: none;
 
-   @media screen and (min-width: 768px) {
-      height: 46px;
+  @media screen and (min-width: 768px) {
+    height: 46px;
 
-      font-size: 16px;
-      line-height: 1.12;
-   }
+    font-size: 16px;
+    line-height: 1.12;
+  }
 
-   &:hover,
-   &:focus,
-   &:active {
-      border-color: var(--ld-111111-ffffff);
-   }
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--ld-111111-ffffff);
+  }
 }
 
-.formInput[name="email"] {
-   color: var(--ld-rgba171717054-rgba255255255054);
+.formInput[name='email'] {
+  color: var(--ld-rgba171717054-rgba255255255054);
 
-   &:hover {
-      border-color: var(--ld-rgba171717015-rgba255255255015);
-   }
+  &:hover {
+    border-color: var(--ld-rgba171717015-rgba255255255015);
+  }
 }
 
 .formBtn {
-   width: 195px;
-   height: 46px;
+  width: 195px;
+  height: 46px;
 
-   background-color: var(--accent);
-   color: var(--white);
+  background-color: var(--accent);
+  color: var(--white);
 
-   font-weight: 600;
-   font-size: 14px;
-   line-height: 1.286;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.286;
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-   padding: 14px auto;
-   margin: 40px auto 0;
+  padding: 14px auto;
+  margin: 40px auto 0;
 
-   border: none;
-   border-radius: 16px;
+  border: none;
+  border-radius: 16px;
 
-   cursor: pointer;
+  cursor: pointer;
 
-   &:hover,
-   &:active {
-      background-color: var(--c-2b78ef);
-   }
+  &:hover,
+  &:active {
+    background-color: var(--c-2b78ef);
+  }
 
-   &[disabled] {
-      background-color: var(--ld-f7f6f9-919191);
-      color: var(--ld-111111-ffffff);
+  &[disabled] {
+    background-color: var(--ld-f7f6f9-919191);
+    color: var(--ld-111111-ffffff);
 
-      border: 1px solid var(--ld-c3bcbc-transparent);
+    border: 1px solid var(--ld-c3bcbc-transparent);
 
-      cursor: auto;
-   }
+    cursor: auto;
+  }
 
-   @media screen and (min-width: 768px) {
-      height: 48px;
-   }
+  @media screen and (min-width: 768px) {
+    height: 48px;
+  }
 
-   @media screen and (min-width: 1440px) {
-      margin-top: 88px;
-      margin-top: 38px;
-   }
+  @media screen and (min-width: 1440px) {
+    margin-top: 88px;
+    margin-top: 38px;
+  }
 }
 
 .formError {
-   position: absolute;
-   left: 100px;
+  position: absolute;
+  left: 100px;
 
-   color: var(--c-ea3d65);
+  color: var(--c-ea3d65);
 
-   font-size: 12px;
-   line-height: 1.167;
+  font-size: 12px;
+  line-height: 1.167;
 }
 
 .pickerBox {
-   position: relative;
+  position: relative;
 
-   &:has(.iconCalendar:hover),
-   &:has(.dateIcon:hover) {
-      .formInput[id="date"] {
-         border-color: var(--ld-111111-ffffff);
-      }
-   }
+  &:has(.iconCalendar:hover),
+  &:has(.dateIcon:hover) {
+    .formInput[id='date'] {
+      border-color: var(--ld-111111-ffffff);
+    }
+  }
 }
 
-.formInput[id="date"] {
-   padding-left: 40px;
+.formInput[id='date'] {
+  padding-left: 40px;
 
-   &::-webkit-calendar-picker-indicator {
-      opacity: 0;
-   }
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
 }
 
 .iconCalendarWrapeer {
-   position: absolute;
-   top: 50%;
-   left: 10px;
-   transform: translateY(-50%);
-   z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 1;
 
-   width: 20px;
-   height: 20px;
+  width: 20px;
+  height: 20px;
 
-   background-image: url("/images/profile/icons.svg");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
+  background-image: url('/images/profile/icons.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-   &:hover {
-      cursor: pointer;
-   }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .dateIcon {
-   position: absolute;
-   top: 50%;
-   left: 90%;
-   transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateY(-50%);
 
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .customCalendarStyle {
-   background-color: var(--accent);
-   color: var(--white);
+  background-color: var(--accent);
+  color: var(--white);
 
-   padding: 10px;
+  padding: 10px;
 
-   border: none;
-   border-radius: 16px;
+  border: none;
+  border-radius: 16px;
 
-   overflow: hidden;
+  overflow: hidden;
 }

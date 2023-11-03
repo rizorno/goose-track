@@ -1,143 +1,143 @@
 .overlay {
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
-   width: 100vw;
-   height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
-   backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
 
-   animation: show 1s forwards;
+  animation: show 1s forwards;
 }
 
 @keyframes show {
-   0% {
-      opacity: 0;
-   }
-   100% {
-      opacity: 1;
-   }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .modalWrapper {
-   position: absolute;
-   top: 50vh;
-   left: 50vw;
-   transform: translate(-50%, -50%);
-   z-index: 2;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 
-   background-color: #bdb8b8;
+  background-color: #bdb8b8;
 
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 
-   padding: 14px;
+  padding: 14px;
 
-   border: 1px solid var(--c-rgba255255255015);
-   border-radius: 8px;
+  border: 1px solid var(--c-rgba255255255015);
+  border-radius: 8px;
 
-   box-shadow: 0px 4px 16px var(--c-rgba17171701);
+  box-shadow: 0px 4px 16px var(--c-rgba17171701);
 
-   @media screen and (min-width: 768px) {
-      transform: translate(-50%, -100%);
+  @media screen and (min-width: 768px) {
+    transform: translate(-50%, -100%);
 
-      padding: 20px 24px;
-   }
+    padding: 20px 24px;
+  }
 }
 
 .modalTitle {
-   font-weight: 600;
-   font-size: 14px;
-   line-height: 1.286;
-   text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.286;
+  text-align: center;
 
-   margin-bottom: 8px;
+  margin-bottom: 8px;
 
-   @media (min-width: 768px) {
-      font-size: 16px;
-   }
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .modalForm {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 .modalInput {
-   width: 100%;
+  width: 100%;
 
-   background-color: var(--white);
+  background-color: var(--white);
 
-   font-weight: 600;
-   font-size: 14px;
-   line-height: 1.286;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.286;
 
-   padding: 10px;
+  padding: 10px;
 
-   border: 1px solid var(--c-rgba22022722906);
-   border-radius: 8px;
+  border: 1px solid var(--c-rgba22022722906);
+  border-radius: 8px;
 
-   outline: none;
+  outline: none;
 
-   @media (min-width: 768px) {
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.125;
+  }
+
+  &::placeholder {
+    color: var(--c-616161);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.286;
+
+    @media (min-width: 768px) {
       font-size: 16px;
       line-height: 1.125;
-   }
+    }
+  }
 
-   &::placeholder {
-      color: var(--c-616161);
-
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.286;
-
-      @media (min-width: 768px) {
-         font-size: 16px;
-         line-height: 1.125;
-      }
-   }
-
-   &:focus,
-   &:hover {
-      border: 1px solid var(--accent);
-   }
+  &:focus,
+  &:hover {
+    border: 1px solid var(--accent);
+  }
 }
 
 .modalBtn {
-   width: 50%;
+  width: 50%;
 
-   background-color: var(--accent);
-   color: var(--white);
+  background-color: var(--accent);
+  color: var(--white);
 
-   font-weight: 600;
-   font-size: 14px;
-   line-height: 1.286;
-   letter-spacing: -0.02em;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.286;
+  letter-spacing: -0.02em;
 
-   padding: 10px;
-   margin: 0 auto;
+  padding: 10px;
+  margin: 0 auto;
 
-   border: none;
-   border-radius: 16px;
+  border: none;
+  border-radius: 16px;
 
-   box-shadow: 4px 2px 16px 0px var(--c-rgba136165191048);
+  box-shadow: 4px 2px 16px 0px var(--c-rgba136165191048);
 
-   cursor: pointer;
+  cursor: pointer;
 
-   @media (min-width: 768px) {
-      font-size: 16px;
-      line-height: 1.333;
-      letter-spacing: -0.36px;
-   }
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.333;
+    letter-spacing: -0.36px;
+  }
 
-   &:hover,
-   &:focus {
-      transform: scale(1.02);
-   }
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+  }
 }

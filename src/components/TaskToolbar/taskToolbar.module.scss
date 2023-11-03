@@ -1,38 +1,38 @@
 .btnWrapper {
-   position: relative;
+  position: relative;
 
-   display: flex;
-   gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .btn {
-   background-color: transparent;
+  background-color: transparent;
 
-   border: none;
+  border: none;
 
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .btnIconDate,
 .btnIcon,
 .btnIconAlarm {
-   width: 16px;
-   height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 .btnIcon {
-   stroke: var(--ld-111111-ffffff);
+  stroke: var(--ld-111111-ffffff);
 
-   &:hover {
-      stroke: var(--accent);
-   }
+  &:hover {
+    stroke: var(--accent);
+  }
 }
 
 .btnIconDate,
 .btnIconAlarm {
-   fill: var(--ld-111111-ffffff);
+  fill: var(--ld-111111-ffffff);
 
-   &:hover {
-      fill: var(--accent);
-   }
+  &:hover {
+    fill: var(--accent);
+  }
 }

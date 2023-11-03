@@ -1,131 +1,133 @@
 .authSection {
-   height: 100vh;
+  height: 100vh;
 
-   background-color: var(--accent);
+  background-color: var(--accent);
 }
 
 .authContainer {
-   height: 100%;
+  height: 100%;
 
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logoTitle {
-   color: var(--white);
+  color: var(--white);
 
-   font-family: "Coolvetica", sans-serif;
-   font-weight: 400;
-   font-size: 44px;
-   line-height: 1.091;
-   text-align: center;
+  font-family: 'Coolvetica', sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.091;
+  text-align: center;
 
-   margin-bottom: 32px;
+  margin-bottom: 32px;
 
-   text-shadow: 0px 9.399999618530273px 57.6875px 0px var(--shadow-1), 0px 47px 355px 0px var(--shadow-2);
+  text-shadow: 0px 9.399999618530273px 57.6875px 0px var(--shadow-1),
+    0px 47px 355px 0px var(--shadow-2);
 
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
+    font-size: 120px;
+    line-height: 1.25;
+
+    margin-bottom: 40px;
+  }
+
+  > span {
+    font-family: 'Coolvetica', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.091;
+
+    @media screen and (min-width: 768px) {
       font-size: 120px;
       line-height: 1.25;
-
-      margin-bottom: 40px;
-   }
-
-   > span {
-      font-family: "Coolvetica", sans-serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 44px;
-      line-height: 1.091;
-
-      @media screen and (min-width: 768px) {
-         font-size: 120px;
-         line-height: 1.25;
-      }
-   }
+    }
+  }
 }
 
 .linkWrapper {
-   max-height: 268px;
-   height: 100%;
+  max-height: 268px;
+  height: 100%;
 
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-   @media screen and (min-width: 768px) {
-      max-height: 46px;
+  @media screen and (min-width: 768px) {
+    max-height: 46px;
 
-      flex-direction: row-reverse;
-      gap: 24px;
-   }
+    flex-direction: row-reverse;
+    gap: 24px;
+  }
 }
 
 .linkBox {
-   background-color: var(--white);
-   color: var(--accent);
+  background-color: var(--white);
+  color: var(--accent);
 
-   font-weight: 600;
-   font-size: 14px;
-   line-height: 1.286;
-   letter-spacing: -0.28px;
-   text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.286;
+  letter-spacing: -0.28px;
+  text-decoration: none;
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 
-   padding: 14px 34px;
+  padding: 14px 34px;
 
-   border-radius: 16px;
-   border-color: transparent;
+  border-radius: 16px;
+  border-color: transparent;
 
-   @media screen and (min-width: 768px) {
-      padding: 16px 29px;
-   }
+  @media screen and (min-width: 768px) {
+    padding: 16px 29px;
+  }
 
-   @media screen and (min-width: 1440px) {
-      padding: 14px 22px;
-   }
+  @media screen and (min-width: 1440px) {
+    padding: 14px 22px;
+  }
 
-   &:hover,
-   &:focus {
-      transform: scale(1.02);
-   }
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+  }
 }
 
 .linkIcon {
-   width: 18px;
-   height: 18px;
+  width: 18px;
+  height: 18px;
 
-   fill: transparent;
-   stroke: var(--accent);
+  fill: transparent;
+  stroke: var(--accent);
 }
 
 .singUp {
-   color: var(--white);
+  color: var(--white);
 
-   font-weight: 600;
-   font-size: 12px;
-   line-height: 1.167;
-   text-align: center;
-   text-decoration-line: underline;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.167;
+  text-align: center;
+  text-decoration-line: underline;
 
-   text-shadow: 0px 9.399999618530273px 57.6875px 0px var(--shadow-1), 0px 47px 355px 0px var(--shadow-2);
+  text-shadow: 0px 9px 58px 0px var(--shadow-1),
+    0px 47px 355px 0px var(--shadow-2);
 
-   @media screen and (min-width: 768px) {
-      font-size: 14px;
-      line-height: 1.286;
-   }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.286;
+  }
 
-   &:hover,
-   &:focus {
-      color: var(--black);
+  &:hover,
+  &:focus {
+    color: var(--black);
 
-      border-color: var(--black);
-   }
+    border-color: var(--black);
+  }
 }

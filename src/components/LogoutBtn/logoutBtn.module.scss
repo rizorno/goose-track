@@ -1,62 +1,62 @@
 .logoutBox {
-   max-width: 131px;
+  max-width: 131px;
 
-   background: var(--accent);
+  background: var(--accent);
 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 
-   padding: 14px 0;
+  padding: 14px 0;
 
-   border: none;
-   border-radius: 16px;
-   
-   outline: none;
+  border: none;
+  border-radius: 16px;
 
-   box-shadow: 4px 2px 16px var(--ld-rgba136165191048-rgba136165191030);
+  outline: none;
 
-   cursor: pointer;
+  box-shadow: 4px 2px 16px var(--ld-rgba136165191048-rgba136165191030);
 
-   &:hover,
-   &:focus {
-      background: var(--c-2b78ef);
-   }
+  cursor: pointer;
 
-   @media screen and (min-width: 768px) {
-      max-width: 141px;
+  &:hover,
+  &:focus {
+    background: var(--c-2b78ef);
+  }
 
-      gap: 11px;
+  @media screen and (min-width: 768px) {
+    max-width: 141px;
 
-      padding: 16px 0;
-   }
+    gap: 11px;
+
+    padding: 16px 0;
+  }
 }
 
 .text {
-   color: var(--white);
+  color: var(--white);
 
-   font-weight: 600;
-   font-size: 14px;
-   line-height: 1.286;
-   letter-spacing: -0.28px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.286;
+  letter-spacing: -0.28px;
 
-   @media screen and (min-width: 768px) {
-      font-size: 18px;
-      line-height: 1.333;
-      letter-spacing: -0.36px;
-   }
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.333;
+    letter-spacing: -0.36px;
+  }
 }
 
 .icon {
-   width: 18px;
-   height: 18px;
+  width: 18px;
+  height: 18px;
 
-   fill: transparent;
-   stroke: var(--white);
+  fill: transparent;
+  stroke: var(--white);
 
-   @media screen and (min-width: 768px) {
-      width: 20px;
-      height: 20px;
-   }
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
 }

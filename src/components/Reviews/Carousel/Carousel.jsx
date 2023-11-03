@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import arrowLeft from 'images/reviews/arrow-left.svg';
-import './carousel.css';
+import css from './carousel.module.scss';
 
 export const Carousel = props => {
   const { children, show, infiniteLoop, autoPlay, interval } = props;
@@ -123,20 +123,24 @@ export const Carousel = props => {
   };
 
   return (
-    <div className={'carousel-container'}>
-      <div className={'carousel-wrapper'}>
+    <div className={css.carouselContainer}>
+      <div className={css.carouselWrapper}>
         {(isRepeating || currentIndex > 0) && (
-          <button onClick={prev} className={'left-arrow'}>
-            <img src={arrowLeft} alt="arrow" />
+          <button onClick={prev} className={css.leftArrow}>
+            <img src={arrowLeft} alt="arrow left" />
           </button>
         )}
         <div
-          className={'carousel-content-wrapper'}
+          className={css.carouselContentWrapper}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
         >
           <div
-            className={`carousel-content show-${show}`}
+            className={
+              show === 2
+                ? `${css.carouselContent} ${css.show2}`
+                : `${css.carouselContent} ${css.show1}`
+            }
             style={{
               transform: `translateX(-${currentIndex * (100 / show)}%)`,
               transition: !transitionEnabled ? 'none' : undefined,
@@ -152,8 +156,8 @@ export const Carousel = props => {
         </div>
 
         {(isRepeating || currentIndex < length - show) && (
-          <button onClick={next} className={'right-arrow'}>
-            <img src={arrowLeft} alt="arrow" className={'icon-right'} />
+          <button onClick={next} className={css.rightArrow}>
+            <img src={arrowLeft} alt="arrow right" className={css.iconRight} />
           </button>
         )}
       </div>

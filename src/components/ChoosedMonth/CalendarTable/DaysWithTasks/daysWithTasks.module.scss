@@ -1,99 +1,99 @@
 .styledTd {
-   position: relative;
+  position: relative;
 
-   min-width: 46px;
-   max-width: 48px;
-   height: calc((100vh - 335px) / 5);
+  min-width: 46px;
+  max-width: 48px;
+  height: calc((100vh - 335px) / 5);
 
-   vertical-align: middle;
+  vertical-align: middle;
 
-   padding: 36px 5px 5px;
+  padding: 36px 5px 5px;
 
-   border: 1px solid var(--ld-rgba22022722905-rgba255255255015);
+  border: 1px solid var(--ld-rgba22022722905-rgba255255255015);
 
-   transition: border 250ms linear;
+  transition: border 250ms linear;
 
-   cursor: pointer;
+  cursor: pointer;
 
-   @media (min-width: 768px) {
-      min-width: 98px;
-      max-width: 100px;
-      height: calc((100vh - 295px) / 5);
-   }
+  @media (min-width: 768px) {
+    min-width: 98px;
+    max-width: 100px;
+    height: calc((100vh - 295px) / 5);
+  }
 
-   @media (min-width: 1440px) {
-      min-width: 130px;
-      height: calc((100vh - 285px) / 5);
-   }
+  @media (min-width: 1440px) {
+    min-width: 130px;
+    height: calc((100vh - 285px) / 5);
+  }
 
-   &:hover,
-   &:focus {
-      .styledNumberDay {
-         background-color: var(--c-dcebf7);
-         color: var(--c-343434);
-      }
-   }
+  &:hover,
+  &:focus {
+    .styledNumberDay {
+      background-color: var(--c-dcebf7);
+      color: var(--c-343434);
+    }
+  }
 
-   .today {
-      background-color: var(--accent);
-      color: var(--white);
-   }
+  .today {
+    background-color: var(--accent);
+    color: var(--white);
+  }
 }
 
 .styledModalTd {
-   position: absolute;
-   top: 50%;
-   left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .styledNumberDay,
 .today {
-   position: absolute;
-   top: 3px;
-   right: 3px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
 
-   color: var(--ld-343434-ffffff);
+  color: var(--ld-343434-ffffff);
 
-   font-weight: 700;
-   font-size: 12px;
-   line-height: 1.167;
-   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.167;
+  text-transform: uppercase;
 
-   padding: 4px 6px;
+  padding: 4px 6px;
 
-   border-radius: 8px;
+  border-radius: 8px;
 
-   @media (min-width: 768px) {
-      top: 8px;
-      right: 10px;
+  @media (min-width: 768px) {
+    top: 8px;
+    right: 10px;
 
-      font-size: 16px;
-      line-height: 1.125;
+    font-size: 16px;
+    line-height: 1.125;
 
-      padding: 4px 8px;
-   }
+    padding: 4px 8px;
+  }
 }
 
 .burgerListTasks {
-   color: var(--accent);
+  color: var(--accent);
 
-   font-weight: 700;
-   font-size: 10px;
-   line-height: 1.4;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.4;
 
-   display: inline-block;
+  display: inline-block;
 
-   flex-grow: 1;
+  flex-grow: 1;
 
-   transition: scale 250ms linear;
+  transition: scale 250ms linear;
 
-   &:hover,
-   &:focus {
-      scale: 1.05;
-   }
+  &:hover,
+  &:focus {
+    scale: 1.05;
+  }
 
-   @media (min-width: 768px) {
-      font-size: 14px;
-      line-height: 1.286;
-   }
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.286;
+  }
 }

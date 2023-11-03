@@ -1,62 +1,63 @@
 .logoBox {
-   color: var(--accent);
+  color: var(--accent);
 
-   display: flex;
-   align-items: center;
-   gap: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 
-   text-decoration: none;
+  text-decoration: none;
 
-   @media screen and (min-width: 1440px) {
-      gap: 10px;
-   }
+  @media screen and (min-width: 1440px) {
+    gap: 10px;
+  }
 }
 
 .logoBoxActive {
-   color: var(--ld-3e85f3-e3f3ff);
+  color: var(--ld-3e85f3-e3f3ff);
 }
 
 .logo {
-   width: 36px;
-   height: 35px;
+  width: 36px;
+  height: 35px;
 
-   text-decoration: none;
-   box-sizing: border-box;
+  text-decoration: none;
+  box-sizing: border-box;
 
-   @media screen and (min-width: 768px) {
-      width: 60px;
-      height: 58px;
-   }
+  @media screen and (min-width: 768px) {
+    width: 60px;
+    height: 58px;
+  }
 
-   @media screen and (min-width: 1440px) {
-      width: 71px;
-      height: 68px;
-   }
+  @media screen and (min-width: 1440px) {
+    width: 71px;
+    height: 68px;
+  }
 }
 
 .logoText {
-   font-family: "Coolvetica", sans-serif;
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.375;
+  font-family: 'Coolvetica', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
 
-   text-shadow: 0px 9.399999618530273px 57.6875px 0px var(--shadow-1), 0px 47px 355px 0px var(--shadow-2);
+  text-shadow: 0px 9.399999618530273px 57.6875px 0px var(--shadow-1),
+    0px 47px 355px 0px var(--shadow-2);
 
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.333;
+  }
+
+  > span {
+    font-family: 'Coolvetica', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+
+    @media screen and (min-width: 768px) {
       font-size: 18px;
       line-height: 1.333;
-   }
-
-   > span {
-      font-family: "Coolvetica", sans-serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.375;
-
-      @media screen and (min-width: 768px) {
-         font-size: 18px;
-         line-height: 1.333;
-      }
-   }
+    }
+  }
 }

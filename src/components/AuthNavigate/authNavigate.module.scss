@@ -1,24 +1,25 @@
 .link {
-   color: var(--accent);
+  color: var(--accent);
 
-   font-weight: 600;
-   font-size: 12px;
-   line-height: 1.167;
-   text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.167;
+  text-decoration: none;
 
-   border-bottom: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
 
-   text-shadow: 0px 9.399999618530273px 57.6875px 0px var(--shadow-1), 0px 47px 355px 0px var(--shadow-2);
+  text-shadow: 0px 9.399999618530273px 57.6875px 0px var(--shadow-1),
+    0px 47px 355px 0px var(--shadow-2);
 
-   @media (min-width: 768px) {
-      font-size: 18px;
-      line-height: 1.333;
-   }
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.333;
+  }
 
-   &:hover,
-   &:focus {
-      color: var(--black);
+  &:hover,
+  &:focus {
+    color: var(--black);
 
-      border-color: var(--black);
-   }
+    border-color: var(--black);
+  }
 }
